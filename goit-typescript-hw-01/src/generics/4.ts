@@ -10,10 +10,10 @@ function createOrUpdateUser(initialValues: Partial<User>): User {
     name: 'Anna',
     surname: 'Kamil',
     email: 'user1@mail.com',
-    password: 'password12334',
+    password: 'password',
   };
   const updatedUser = { ...currentUser, ...initialValues };
-  return updatedUser
+  return updatedUser;
 }
 
 createOrUpdateUser({ 
